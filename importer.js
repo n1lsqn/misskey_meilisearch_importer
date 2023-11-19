@@ -28,11 +28,6 @@ const config = (() => {
 	}
 })();
 
-if (config.id != 'aid') {
-	console.error('Id format must be "aid".');
-	process.exit(1);
-}
-
 if (!config.meilisearch) {
 	console.error("Meilisearch settings are not enabled.");
 	process.exit(1);
